@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "nav/*": [ "./src/nav/*" ],
+      "stores/*": [ "./src/stores/*" ]
+    }
+  },
+  "exclude": [ "node_modules" ],
+  "include": [ "src" ]
+}

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Moq" Version="4.14.1" />
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit.DeepObjectCompare" Version="2.0.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <PackageReference Include="RavenDB.Client" Version="4.2.102" />
+    <PackageReference Include="RavenDB.TestDriver" Version="4.2.101" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crux.Data\Crux.Data.csproj" />
+    <ProjectReference Include="..\Crux.Endpoint\Crux.Endpoint.csproj" />
+    <ProjectReference Include="..\Crux.Model\Crux.Model.csproj" />
+  </ItemGroup>
+
+</Project>

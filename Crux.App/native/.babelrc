@@ -1,0 +1,15 @@
+{
+  "presets": ["babel-preset-expo"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "nav": "./src/nav",
+          "stores": "./src/stores"
+        }
+      }
+    ]
+  ]
+}

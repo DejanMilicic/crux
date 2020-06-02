@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <UserSecretsId>05e9e746-99a6-48b1-b2ff-ef5c32759623</UserSecretsId>
+  </PropertyGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties web_4package_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+  <ItemGroup>
+    <Compile Remove="web\src\components\furniture\Head\**" />
+    <Content Remove="web\src\components\furniture\Head\**" />
+    <EmbeddedResource Remove="web\src\components\furniture\Head\**" />
+    <None Remove="web\src\components\furniture\Head\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.3" />
+  </ItemGroup>
+
+</Project>
